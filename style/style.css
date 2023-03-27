@@ -1,0 +1,388 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url(./NunitoSans-SemiBold.ttf);
+}
+header {
+  padding: 40px 0 0px;
+  border-bottom: 1px solid rgba(247, 243, 243, 0.4);
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+header .header-left img {
+  width: 50%;
+}
+header .header-right a {
+  font-size: 17px;
+  font-weight: 900px;
+  text-decoration: none;
+  color: #333;
+  padding: 24px 0 26px;
+  margin-left: 40px;
+  font-family: Nunito;
+}
+header .header-right i {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .header-right a {
+    display: none;
+  }
+}
+#discover-now {
+  background-image: url(./image/background.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  filter: brightness(0.7);
+}
+#discover-now p {
+  color: white;
+  font-size: 20px;
+  font-family: Nunito;
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 150px;
+  font-weight: 500;
+}
+#discover-now h1 {
+  color: white;
+  font-size: 50px;
+  font-family: Nunito;
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+#discover-now button {
+  background-color: #6168FF;
+  color: #fff;
+  border: 2px solid #6168FF;
+  border-radius: 4px;
+  font-size: 13px;
+  padding: 13px 30px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 45%;
+  margin-top: 20px;
+}
+
+#about {
+  display: flex;
+}
+#about h2 {
+  margin-bottom: 15px;
+  font-family: Nunito;
+  color: #333;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 18px;
+}
+#about p {
+  color: #666;
+  font-family: Nunito;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+#about .video {
+  width: 45%;
+}
+#about .video img {
+  width: 100%;
+}
+
+#destinations h3 {
+  position: relative;
+  font-size: 15px;
+  line-height: 1.3;
+  color: #6168FF;
+  font-family: Nunito;
+  z-index: 1;
+}
+#destinations h3::before {
+  content: "DESTINATIONS";
+  position: absolute;
+  font-size: 70px;
+  font-weight: 900;
+  color: #EFEFEF;
+  left: 32%;
+  top: -15px;
+  z-index: -11111;
+}
+#destinations h4 {
+  position: relative;
+  font-size: 27px;
+  line-height: 38px;
+  color: #333;
+  font-family: Nunito;
+  z-index: 1;
+}
+
+#services h3 {
+  position: relative;
+  font-size: 15px;
+  line-height: 1.3;
+  color: #6168FF;
+  font-family: Nunito;
+  z-index: 1;
+}
+#services h3::before {
+  content: "SERVICES";
+  position: absolute;
+  font-size: 70px;
+  font-weight: 900;
+  color: #EFEFEF;
+  left: 32%;
+  top: -15px;
+  z-index: -11111;
+}
+#services h4 {
+  position: relative;
+  font-size: 27px;
+  line-height: 38px;
+  color: #333;
+  font-family: Nunito;
+  z-index: 1;
+}
+#services .services .card {
+  background-color: #F4F9FF;
+  border: none;
+}
+
+#gallery h3 {
+  position: relative;
+  font-size: 15px;
+  line-height: 1.3;
+  color: #6168FF;
+  font-family: Nunito;
+  z-index: 1;
+}
+#gallery h3::before {
+  content: "GALLERY";
+  position: absolute;
+  font-size: 70px;
+  font-weight: 900;
+  color: #EFEFEF;
+  left: 32%;
+  top: -15px;
+  z-index: -11111;
+}
+#gallery h4 {
+  position: relative;
+  font-size: 27px;
+  line-height: 38px;
+  color: #333;
+  font-family: Nunito;
+  z-index: 1;
+}
+#gallery .gallery .box {
+  width: 33%;
+}
+#gallery .gallery .box h2 {
+  display: none;
+  position: relative;
+  transition: 5s;
+  z-index: -1;
+}
+#gallery .gallery .box h2:hover {
+  display: inline;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  font-family: Nunito;
+  z-index: 1;
+}
+#gallery .gallery .box img {
+  width: 100%;
+}
+#gallery .gallery .box img:hover {
+  filter: brightness(0.6);
+}
+
+#package h3 {
+  position: relative;
+  font-size: 15px;
+  line-height: 1.3;
+  color: #6168FF;
+  font-family: Nunito;
+  z-index: 1;
+}
+#package h3::before {
+  content: "PACKAGE";
+  position: absolute;
+  font-size: 70px;
+  font-weight: 900;
+  color: #EFEFEF;
+  left: 32%;
+  top: -15px;
+  z-index: -11111;
+}
+#package h4 {
+  position: relative;
+  font-size: 27px;
+  line-height: 38px;
+  color: #333;
+  font-family: Nunito;
+  z-index: 1;
+}
+#package .card-group {
+  width: 70%;
+}
+#package .card-group img {
+  width: 100%;
+}
+
+#logo {
+  background-color: #6168FF;
+  width: 100%;
+  height: 22vh;
+  margin-top: 50px;
+  border: none;
+}
+#logo .logo {
+  width: 100%;
+}
+#logo .logo img {
+  width: 100%;
+}
+
+#test h3 {
+  position: relative;
+  font-size: 15px;
+  line-height: 1.3;
+  color: #6168FF;
+  font-family: Nunito;
+  z-index: 1;
+}
+#test h3::before {
+  content: "TESTIMONIALS";
+  position: absolute;
+  font-size: 70px;
+  font-weight: 900;
+  color: #EFEFEF;
+  left: 32%;
+  top: -15px;
+  z-index: -11111;
+}
+#test h4 {
+  position: relative;
+  font-size: 27px;
+  line-height: 38px;
+  color: #333;
+  font-family: Nunito;
+  z-index: 1;
+}
+#test .card {
+  background-color: #F4F9FF;
+  border: none;
+}
+#test .card img {
+  border-radius: 50%;
+  width: 30%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+}
+
+#news h3 {
+  position: relative;
+  font-size: 15px;
+  line-height: 1.3;
+  color: #6168FF;
+  font-family: Nunito;
+  z-index: 1;
+}
+#news h3::before {
+  content: "BLOG";
+  position: absolute;
+  font-size: 70px;
+  font-weight: 900;
+  color: #EFEFEF;
+  left: 32%;
+  top: -15px;
+  z-index: -11111;
+}
+#news h4 {
+  position: relative;
+  font-size: 27px;
+  line-height: 38px;
+  color: #333;
+  font-family: Nunito;
+  z-index: 1;
+}
+#news .card-group .card {
+  width: 60%;
+}
+#news .card-group .card img {
+  width: 100%;
+}
+
+#contact h3 {
+  position: relative;
+  font-size: 15px;
+  line-height: 1.3;
+  color: #6168FF;
+  font-family: Nunito;
+  z-index: 1;
+}
+#contact h3::before {
+  content: "CONTACT";
+  position: absolute;
+  font-size: 70px;
+  font-weight: 900;
+  color: #EFEFEF;
+  left: 32%;
+  top: -15px;
+  z-index: -11111;
+}
+#contact h4 {
+  position: relative;
+  font-size: 27px;
+  line-height: 38px;
+  color: #333;
+  font-family: Nunito;
+  z-index: 1;
+}
+#contact .form-group {
+  background-color: #F4F9FF;
+}
+
+footer {
+  background-color: #00102A;
+  -webkit-clip-path: polygon(0 24%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 24%, 100% 0, 100% 100%, 0% 100%);
+  width: 100%;
+  height: 80vh;
+  padding-top: 120px;
+}
+footer a {
+  text-decoration: none;
+}
+footer p a {
+  text-decoration: none;
+}
+footer .footer-left {
+  width: 50%;
+}
+footer .footer-left img {
+  width: 20%;
+  margin-left: 30px;
+}
+footer .icons i {
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=style.css.map */
